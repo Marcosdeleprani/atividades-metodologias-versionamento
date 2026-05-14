@@ -1,0 +1,22 @@
+print("=== CALCULADORA EM PYTHON ===")
+
+escolha = int(input("1- soma\n2- subtração\n3- multiplicação\n4- divisão"))
+numero1 = float(input("digite o primeiro valor: "))
+numero2 = float(input("digite o segundo valor: "))
+
+match escolha:
+
+    case 1:
+        adicao(numero1,numero2)
+    case 2:
+        subtracao(numero1,numero2)
+    case 3:
+        multiplicacao(numero1,numero2)
+    case 4:
+        divisao(numero1,numero2)
+    case _:
+        print("erro na operação")
+        
+def adicao(num1, num2):
+    resultado = num1 + num2
+    
